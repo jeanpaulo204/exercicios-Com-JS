@@ -15,4 +15,4 @@ se Você Estiver no Limite da Via de trânsito ele vai dizer que você esta no l
 
 caso você passe desse limite ele dizer que você ultrapassou e vai te dar uma multa.
 
-<img src="transito.png" />
+<img src="excesso.png" />
