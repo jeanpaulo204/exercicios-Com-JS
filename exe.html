@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index .css" media="screen">
+    <title>Detran</title>
+</head>
+<body>
+
+<div id="m-1">
+
+<div class="m-2">
+<div class="titulo">
+    <h1>Sistemas De Multas</h1> <br> <br>
+    <h3>A Velocidade Da Via Permitida é De <strong>100 km</strong></h3>
+</div>
+
+<div id="padrao">
+    Velocidade Do Carro ou Moto: <input class="tx" type="number" name="txtvel1" id="txtvel1"> KM/H 
+    <input class="botao" type="button" value="Verificar" onclick="calcular()">
+</div>
+
+<div id="r">
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<script>
+
+
+
+function calcular() {
+    var txtv = window.document.querySelector('input#txtvel1')   
+    var r  =    window.document.querySelector('div#r')
+    var x  =   Number(txtv.value) 
+
+    r.innerHTML = `<p> Sua Velocidade Atual é De <strong>${x}<strong> KM </p>`
+        if (x > 100) {
+            r.innerHTML += `<h4> excesso de velocidade na via   </h4>`
+            r.innerHTML += `<h4>Você Esta Sendo  Multado  em $500 Reais  Por Excesso de Velocidade!!!  </h4>`
+
+        }
+
+        if (x < 100) {
+            r.innerHTML += `<p> <h5> Você  Esta No Limite Da Via , Obrigado e Boa Viagem! </h5> Lembresse de Sempre Usar o Sinto De Segurança!</P>`
+        }
+   
+}
+
+
+
+</script>
+
+
+</body>
+</html>

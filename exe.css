@@ -1,0 +1,45 @@
+* {
+padding: 0;
+margin: 0;
+color: whitesmoke;
+}
+
+body {
+background-image: url("transito.png");
+background-size:cover;
+}
+
+#m-1 {
+display: flex;
+justify-content: left;
+margin-left:20px;
+
+}
+
+.m-2 {
+    background-color: black ;
+    border:10px solid grey;
+    width: 350px;
+    height:600px;   
+}
+
+strong {
+color: wheat;
+}
+
+h4 {
+color: red;
+}
+
+h5 {
+color: green;
+font-family: verdana;
+}
+
+.botao {
+background-color: blue;
+}
+
+.tx {
+color: black;
+}
